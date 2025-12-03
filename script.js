@@ -1,3 +1,6 @@
+// Animated StrokeSense Landing Page Interactions
+
+// Mobile navigation toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -62,8 +65,8 @@ const translations = {
         'nav.features': 'Features',
         'nav.howItWorks': 'How It Works',
         'nav.about': 'About',
-        'hero.title': 'Magbaybayin nang Masaya',
-        'hero.subtitle': 'Master Filipino heritage writing through AI-powered handwriting practice',
+        'hero.title': 'StrokeSense: Learn Baybayin the Smart and Fun Way',
+        'hero.subtitle': 'Discover the ancient Filipino script through interactive lessons, stroke-by-stroke guidance, and gamified challenges. Reconnect with your roots while mastering Baybayin writing.',
         'hero.ctaPrimary': 'Start Learning Free',
         'hero.ctaSecondary': 'Watch Demo',
         'features.title': 'Why Choose StrokeSense?',
@@ -216,7 +219,7 @@ function applyLanguage(lang) {
     localStorage.setItem('strokesense-lang', lang);
 }
 
-const savedLang = localStorage.getItem('strokesense-lang') || 'en';
+const savedLang = 'en';
 applyLanguage(savedLang);
 
 langButtons.forEach(btn => {
@@ -236,4 +239,3 @@ charItems.forEach(item => {
         alert(`${char} = ${translation}`);
     });
 });
-
