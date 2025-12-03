@@ -13,32 +13,44 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
+            <div class="nav-left">: Discover the ancient Filipino script through interactive lessons, stroke-by-stroke guidance, and gamified challenges. Reconnect with your roots while mastering Baybayin writing.                <div class="language-toggle" aria-label="Language toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="tl">TL</button>
+                </div>
+            </div>
             <div class="nav-brand">
-                <h1>StrokeSense</h1>
+                <h1 data-i18n="brand.name">StrokeSense</h1>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Theme toggle">
+                    <span class="theme-icon">☀</span>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
+        <div class="container hero-grid">
             <div class="hero-content">
-                <h1 class="hero-title">StrokeSense: Learn Baybayin the Smart and Fun Way</h1>
-                <p class="hero-subtitle">Master Filipino heritage writing through AI-powered handwriting practice</p>
+                <h1 class="hero-title" data-i18n="hero.title">StrokeSense: Learn Baybayin the Smart and Fun Way
+</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Master Filipino heritage writing through AI-powered handwriting practice</p>
                 <div class="hero-cta">
-                    <a href="#" class="btn btn-primary">Start Learning Free</a>
-                    <a href="#" class="btn btn-secondary">Watch Demo</a>
+                    <a href="#" class="btn btn-primary" data-i18n="hero.ctaPrimary">Start Learning Free</a>
+                    <a href="#" class="btn btn-outline btn-demo" data-i18n="hero.ctaSecondary">Watch Demo</a>
                 </div>
             </div>
             <div class="hero-background">
@@ -50,6 +62,26 @@
                     <span class="char">ᜁ</span>
                     <span class="char">ᜈ</span>
                 </div>
+                <div class="hero-image">
+                    <svg viewBox="0 0 400 400" class="hero-animated-svg">
+                        <circle cx="200" cy="200" r="80" fill="none" stroke="#D4AF37" stroke-width="3" class="sun-ring"/>
+                        <circle cx="200" cy="200" r="60" fill="#D4AF37" opacity="0.3" class="sun-center"/>
+                        <g class="sun-rays">
+                            <line x1="200" y1="120" x2="200" y2="80" stroke="#D4AF37" stroke-width="4" class="ray"/>
+                            <line x1="280" y1="200" x2="320" y2="200" stroke="#D4AF37" stroke-width="4" class="ray"/>
+                            <line x1="200" y1="280" x2="200" y2="320" stroke="#D4AF37" stroke-width="4" class="ray"/>
+                            <line x1="120" y1="200" x2="80" y2="200" stroke="#D4AF37" stroke-width="4" class="ray"/>
+                            <line x1="250" y1="150" x2="280" y2="120" stroke="#D4AF37" stroke-width="3" class="ray"/>
+                            <line x1="250" y1="250" x2="280" y2="280" stroke="#D4AF37" stroke-width="3" class="ray"/>
+                            <line x1="150" y1="250" x2="120" y2="280" stroke="#D4AF37" stroke-width="3" class="ray"/>
+                            <line x1="150" y1="150" x2="120" y2="120" stroke="#D4AF37" stroke-width="3" class="ray"/>
+                        </g>
+                        <text x="200" y="100" font-size="40" fill="#8B4513" opacity="0.6" text-anchor="middle" class="baybayin-text">ᜊ</text>
+                        <text x="300" y="200" font-size="40" fill="#8B4513" opacity="0.6" text-anchor="middle" class="baybayin-text">ᜌ</text>
+                        <text x="200" y="300" font-size="40" fill="#8B4513" opacity="0.6" text-anchor="middle" class="baybayin-text">ᜁ</text>
+                        <text x="100" y="200" font-size="40" fill="#8B4513" opacity="0.6" text-anchor="middle" class="baybayin-text">ᜈ</text>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -57,41 +89,46 @@
     <!-- Features/Highlights Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose StrokeSense?</h2>
+            <div class="section-heading">
+                <h2 class="section-title">Why StrokeSense Matters</h2>
+                <p>
+                    Baybayin is part of the Philippines’ cultural identity, but knowledge of the script is fading.
+                    Few schools teach it extensively, and most learning happens in isolated workshops or informal sessions.
+                    StrokeSense changes this by making Baybayin practice interactive, guided, and fun.
+                </p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
-                    <h3>AI Handwriting Feedback</h3>
-                    <p>Instant stroke accuracy evaluation to help you improve with every practice session.</p>
+                    <div class="feature-icon" style="color:#0038A8;">🤝</div>
+                    <h3>Making learning interactive</h3>
+                    <p>Instead of passive memorization, users actively write and see their progress with every session.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Gamified Learning</h3>
-                    <p>Earn points, unlock badges, and progress through levels as you master Baybayin.</p>
+                    <div class="feature-icon" style="color:#CE1126;">⚡</div>
+                    <h3>Providing instant feedback</h3>
+                    <p>AI identifies mistakes in real-time, helping learners improve with each stroke they draw.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Progress Tracking</h3>
-                    <p>Visual charts and achievement certificates to celebrate your learning journey.</p>
+                    <div class="feature-icon" style="color:#FCD116;">🎯</div>
+                    <h3>Adding fun and motivation</h3>
+                    <p>Points, badges, and challenges keep users engaged and excited to unlock the next level.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3>Cultural Insights</h3>
-                    <p>Discover the historical context and meaning behind each Baybayin character.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Responsive Design</h3>
-                    <p>Works seamlessly on desktop, tablet, and mobile devices for learning anywhere.</p>
+                    <div class="feature-icon" style="color:#8B4513;">🌺</div>
+                    <h3>Preserving cultural heritage</h3>
+                    <p>By teaching correct writing and traditional calligraphy styles, StrokeSense helps users connect with Filipino history.</p>
                 </div>
             </div>
         </div>
     </section>
+or 
+    <!-- Banig Divider -->
+    <div class="banig-divider"></div>
 
     <!-- Visual Element Section -->
     <section class="visual-section">
         <div class="container">
-            <h2 class="section-title">Experience Baybayin</h2>
+            <h2 class="section-title" data-i18n="visual.title">Experience Baybayin</h2>
             <div class="visual-content">
                 <div class="mockup-container">
                     <div class="handwriting-mockup">
@@ -106,8 +143,8 @@
                         <div class="mockup-canvas">
                             <div class="stroke-preview">
                                 <svg viewBox="0 0 200 100" class="stroke-svg">
-                                    <path d="M 20 50 Q 50 20, 80 50 T 140 50" stroke="#1E3A8A" stroke-width="3" fill="none"/>
-                                    <path d="M 140 50 Q 170 20, 180 50" stroke="#D4AF37" stroke-width="3" fill="none"/>
+                                    <path d="M 20 50 Q 50 20, 80 50 T 140 50" stroke="#8B4513" stroke-width="3" fill="none" class="animated-stroke"/>
+                                    <path d="M 140 50 Q 170 20, 180 50" stroke="#228B22" stroke-width="3" fill="none" class="animated-stroke-delay"/>
                                 </svg>
                             </div>
                             <div class="feedback-text">Great stroke! Keep practicing.</div>
@@ -115,7 +152,25 @@
                     </div>
                 </div>
                 <div class="characters-showcase">
-                    <h3>Baybayin Characters</h3>
+                    <div class="baybayin-heritage-image">
+                        <svg viewBox="0 0 600 400" class="heritage-animated-svg">
+                            <rect width="600" height="400" fill="#FFF8DC" rx="10" class="scroll-bg"/>
+                            <line x1="50" y1="80" x2="550" y2="80" stroke="#8B4513" stroke-width="2" opacity="0.2" class="paper-line"/>
+                            <line x1="50" y1="160" x2="550" y2="160" stroke="#8B4513" stroke-width="2" opacity="0.2" class="paper-line"/>
+                            <line x1="50" y1="240" x2="550" y2="240" stroke="#8B4513" stroke-width="2" opacity="0.2" class="paper-line"/>
+                            <line x1="50" y1="320" x2="550" y2="320" stroke="#8B4513" stroke-width="2" opacity="0.2" class="paper-line"/>
+                            <g class="script-group">
+                                <text x="100" y="120" font-size="60" fill="#8B4513" class="script-char">ᜊᜌᜊᜌ</text>
+                                <text x="100" y="200" font-size="60" fill="#8B4513" class="script-char">ᜁᜈ</text>
+                                <text x="100" y="280" font-size="60" fill="#228B22" class="script-char">ᜃᜎ</text>
+                            </g>
+                            <circle cx="80" cy="60" r="8" fill="#D4AF37" class="decor-dot"/>
+                            <circle cx="520" cy="340" r="8" fill="#D4AF37" class="decor-dot"/>
+                            <path d="M 50 50 Q 75 35, 100 50" stroke="#D4AF37" stroke-width="3" fill="none" class="decor-line"/>
+                            <path d="M 500 350 Q 525 365, 550 350" stroke="#D4AF37" stroke-width="3" fill="none" class="decor-line"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="visual.charactersTitle">Baybayin Characters</h3>
                     <div class="characters-grid">
                         <div class="char-item" data-char="ᜊ" data-translation="Ba">
                             <div class="char-display">ᜊ</div>
@@ -147,39 +202,119 @@
         </div>
     </section>
 
+    <!-- Filipino Cultural Gallery Section -->
+    <section class="cultural-gallery">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery.title">Filipino Heritage</h2>
+            <p class="gallery-subtitle" data-i18n="gallery.subtitle">Discover the rich cultural heritage that inspires StrokeSense</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <svg viewBox="0 0 300 250" class="gallery-svg">
+                        <defs>
+                            <pattern id="weave1" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <rect width="30" height="30" fill="#FFF8DC"/>
+                                <path d="M0,15 L15,15 L15,0 M15,30 L30,30 L30,15" stroke="#D4AF37" stroke-width="2"/>
+                                <path d="M15,0 L15,15 L30,15 M0,30 L0,15 L15,15" stroke="#8B4513" stroke-width="2"/>
+                            </pattern>
+                        </defs>
+                        <rect width="300" height="250" fill="url(#weave1)"/>
+                    </svg>
+                    <div class="gallery-overlay">
+                        <p>Traditional Weaving</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 300 250" class="gallery-svg">
+                        <rect width="300" height="250" fill="#FFF8DC"/>
+                        <rect x="0" y="0" width="300" height="25" fill="#8B4513" opacity="0.6"/>
+                        <rect x="0" y="50" width="300" height="25" fill="#D4AF37" opacity="0.5"/>
+                        <rect x="0" y="100" width="300" height="25" fill="#8B4513" opacity="0.6"/>
+                        <rect x="0" y="150" width="300" height="25" fill="#228B22" opacity="0.4"/>
+                        <rect x="0" y="200" width="300" height="25" fill="#8B4513" opacity="0.6"/>
+                        <circle cx="150" cy="125" r="30" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                    </svg>
+                    <div class="gallery-overlay">
+                        <p>Cultural Patterns</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 300 250" class="gallery-svg">
+                        <rect width="300" height="250" fill="#FFF8DC"/>
+                        <polygon points="150,50 190,110 150,170 110,110" fill="#8B4513" opacity="0.6"/>
+                        <polygon points="150,90 210,130 150,170 90,130" fill="#D4AF37" opacity="0.5"/>
+                    </svg>
+                    <div class="gallery-overlay">
+                        <p>Geometric Motifs</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 300 250" class="gallery-svg">
+                        <rect width="300" height="250" fill="#FFF8DC"/>
+                        <text x="150" y="120" font-size="70" fill="#8B4513" text-anchor="middle">ᜊ</text>
+                        <text x="150" y="190" font-size="70" fill="#228B22" text-anchor="middle">ᜌ</text>
+                    </svg>
+                    <div class="gallery-overlay">
+                        <p>Ancient Script</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banig Divider -->
+    <div class="banig-divider"></div>
+
     <!-- Information/Details Section -->
     <section id="how-it-works" class="info-section">
         <div class="container">
             <!-- How It Works -->
             <div class="info-subsection">
-                <h2 class="section-title">How It Works</h2>
+                <h2 class="section-title" data-i18n="how.title">How It Works</h2>
+                <div class="info-image-container">
+                    <svg viewBox="0 0 800 400" class="info-animated-svg">
+                        <rect width="800" height="400" fill="#FFF8DC" rx="15"/>
+                        <g class="hand-group">
+                            <ellipse cx="400" cy="200" rx="150" ry="100" fill="#F5EDDC" opacity="0.6" class="tablet-bg"/>
+                            <rect x="280" y="140" width="240" height="120" fill="#FFF8DC" rx="5" class="tablet"/>
+                            <text x="400" y="180" font-size="50" fill="#8B4513" text-anchor="middle" class="writing-char">ᜊ</text>
+                            <text x="400" y="220" font-size="50" fill="#228B22" text-anchor="middle" class="writing-char-delay">ᜌ</text>
+                            <path d="M 300 200 Q 350 180, 400 200 T 500 200" stroke="#D4AF37" stroke-width="4" fill="none" class="draw-path"/>
+                        </g>
+                        <text x="150" y="100" font-size="60" fill="#8B4513" opacity="0.4" class="float-char">ᜊ</text>
+                        <text x="650" y="120" font-size="60" fill="#228B22" opacity="0.4" class="float-char-delay">ᜌ</text>
+                        <text x="100" y="300" font-size="60" fill="#8B4513" opacity="0.4" class="float-char">ᜁ</text>
+                        <text x="700" y="320" font-size="60" fill="#228B22" opacity="0.4" class="float-char-delay">ᜈ</text>
+                        <circle cx="400" cy="50" r="15" fill="#D4AF37" opacity="0.6" class="bounce-dot"/>
+                        <circle cx="400" cy="350" r="15" fill="#228B22" opacity="0.6" class="bounce-dot-delay"/>
+                    </svg>
+                </div>
                 <div class="steps-container">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Sign Up</h3>
-                            <p>Create your free account on our web platform in seconds.</p>
+                            <h3 data-i18n="how.step1Title">Sign Up</h3>
+                            <p data-i18n="how.step1Body">Create your free account on our web platform in seconds.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h3>Practice</h3>
-                            <p>Use your mouse or touchscreen to practice handwriting Baybayin characters.</p>
+                            <h3 data-i18n="how.step2Title">Practice</h3>
+                            <p data-i18n="how.step2Body">Use your mouse or touchscreen to practice handwriting Baybayin characters.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Get Feedback</h3>
-                            <p>Receive instant AI feedback and complete interactive challenges.</p>
+                            <h3 data-i18n="how.step3Title">Get Feedback</h3>
+                            <p data-i18n="how.step3Body">Receive instant AI feedback and complete interactive challenges.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
                         <div class="step-content">
-                            <h3>Track Progress</h3>
-                            <p>Monitor your improvement and unlock achievements as you learn.</p>
+                            <h3 data-i18n="how.step4Title">Track Progress</h3>
+                            <p data-i18n="how.step4Body">Monitor your improvement and unlock achievements as you learn.</p>
                         </div>
                     </div>
                 </div>
@@ -187,56 +322,145 @@
 
             <!-- Benefits -->
             <div class="info-subsection benefits">
-                <h2 class="section-title">Benefits</h2>
+                <h2 class="section-title" data-i18n="benefits.title">Benefits</h2>
                 <div class="benefits-list">
                     <div class="benefit-item">
                         <span class="checkmark">✓</span>
-                        <p>Learn faster with AI guidance</p>
+                        <p data-i18n="benefits.item1">Learn faster with AI guidance</p>
                     </div>
                     <div class="benefit-item">
                         <span class="checkmark">✓</span>
-                        <p>Stay motivated with gamification</p>
+                        <p data-i18n="benefits.item2">Stay motivated with gamification</p>
                     </div>
                     <div class="benefit-item">
                         <span class="checkmark">✓</span>
-                        <p>Build confidence through progress tracking</p>
+                        <p data-i18n="benefits.item3">Build confidence through progress tracking</p>
                     </div>
                     <div class="benefit-item">
                         <span class="checkmark">✓</span>
-                        <p>Preserve Filipino cultural heritage</p>
+                        <p data-i18n="benefits.item4">Preserve Filipino cultural heritage</p>
                     </div>
                     <div class="benefit-item">
                         <span class="checkmark">✓</span>
-                        <p>Accessible anytime, anywhere</p>
+                        <p data-i18n="benefits.item5">Accessible anytime, anywhere</p>
                     </div>
                 </div>
             </div>
 
             <!-- Who It's For -->
             <div class="info-subsection">
-                <h2 class="section-title">Who It's For</h2>
+                <h2 class="section-title" data-i18n="who.title">Who It's For</h2>
                 <div class="audience-grid">
                     <div class="audience-card">
-                        <h3>Students & Schools</h3>
-                        <p>Perfect for classroom learning and homework practice.</p>
+                        <h3 data-i18n="who.item1Title">Students & Schools</h3>
+                        <p data-i18n="who.item1Body">Perfect for classroom learning and homework practice.</p>
                     </div>
                     <div class="audience-card">
-                        <h3>Heritage Learners</h3>
-                        <p>Connect with your Filipino roots through authentic script learning.</p>
+                        <h3 data-i18n="who.item2Title">Heritage Learners</h3>
+                        <p data-i18n="who.item2Body">Connect with your Filipino roots through authentic script learning.</p>
                     </div>
                     <div class="audience-card">
-                        <h3>Teachers & Educators</h3>
-                        <p>Engage students with interactive cultural education tools.</p>
+                        <h3 data-i18n="who.item3Title">Teachers & Educators</h3>
+                        <p data-i18n="who.item3Body">Engage students with interactive cultural education tools.</p>
                     </div>
                     <div class="audience-card">
-                        <h3>Cultural Organizations</h3>
-                        <p>Promote Filipino heritage in museums and cultural centers.</p>
+                        <h3 data-i18n="who.item4Title">Cultural Organizations</h3>
+                        <p data-i18n="who.item4Body">Promote Filipino heritage in museums and cultural centers.</p>
                     </div>
                     <div class="audience-card">
-                        <h3>Art Enthusiasts</h3>
-                        <p>Explore the beauty of traditional Filipino calligraphy.</p>
+                        <h3 data-i18n="who.item5Title">Art Enthusiasts</h3>
+                        <p data-i18n="who.item5Body">Explore the beauty of traditional Filipino calligraphy.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banig Divider -->
+    <div class="banig-divider"></div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About StrokeSense</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3 data-i18n="about.introTitle">Preserving Filipino Heritage Through Technology</h3>
+                        <p data-i18n="about.introBody">StrokeSense was born from a passion to preserve and share the beautiful ancient script of Baybayin, the pre-colonial writing system of the Philippines. Our mission is to make learning this traditional script accessible, engaging, and fun for Filipinos and heritage learners worldwide.</p>
+                    </div>
+                    <div class="about-mission">
+                        <h3 data-i18n="about.missionTitle">Our Mission</h3>
+                        <p data-i18n="about.missionBody">We believe that cultural heritage should be preserved and passed down through generations. By combining cutting-edge AI technology with gamified learning, we're making Baybayin accessible to students, educators, and cultural enthusiasts everywhere.</p>
+                    </div>
+                    <div class="about-values">
+                        <h3 data-i18n="about.valuesTitle">Our Values</h3>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon">🇵🇭</div>
+                                <h4 data-i18n="about.value1Title">Cultural Pride</h4>
+                                <p data-i18n="about.value1Body">Celebrating and preserving Filipino heritage</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">🎓</div>
+                                <h4 data-i18n="about.value2Title">Education First</h4>
+                                <p data-i18n="about.value2Body">Making learning accessible to everyone</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">💡</div>
+                                <h4 data-i18n="about.value3Title">Innovation</h4>
+                                <p data-i18n="about.value3Body">Using modern technology for traditional learning</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">❤️</div>
+                                <h4 data-i18n="about.value4Title">Community</h4>
+                                <p data-i18n="about.value4Body">Building connections through shared heritage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <svg viewBox="0 0 500 500" class="about-animated-svg">
+                        <rect width="500" height="500" fill="#FFF8DC" rx="15"/>
+                        <g class="bahay-kubo">
+                            <polygon points="250,200 200,250 300,250" fill="#8B4513" opacity="0.7"/>
+                            <rect x="220" y="250" width="60" height="80" fill="#8B4513" opacity="0.7"/>
+                            <rect x="230" y="270" width="15" height="25" fill="#D4AF37"/>
+                            <rect x="255" y="270" width="15" height="25" fill="#D4AF37"/>
+                        </g>
+                        <text x="100" y="150" font-size="80" fill="#8B4513" opacity="0.5" class="about-char">ᜊ</text>
+                        <text x="350" y="180" font-size="80" fill="#228B22" opacity="0.5" class="about-char-delay">ᜌ</text>
+                        <text x="150" y="400" font-size="80" fill="#8B4513" opacity="0.5" class="about-char">ᜁ</text>
+                        <text x="350" y="420" font-size="80" fill="#228B22" opacity="0.5" class="about-char-delay">ᜈ</text>
+                        <circle cx="400" cy="100" r="30" fill="#D4AF37" opacity="0.4" class="about-sun"/>
+                        <circle cx="400" cy="100" r="20" fill="#D4AF37" opacity="0.6" class="about-sun"/>
+                        <path d="M 0 450 Q 125 420, 250 450 T 500 450" stroke="#1E90FF" stroke-width="8" fill="none" opacity="0.4" class="wave"/>
+                        <path d="M 0 480 Q 125 450, 250 480 T 500 480" stroke="#1E90FF" stroke-width="8" fill="none" opacity="0.4" class="wave-delay"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banig Divider -->
+    <div class="banig-divider"></div>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-wrapper">
+                <div class="quote-parols">
+                    <div class="parol parol-left"></div>
+                    <div class="parol parol-right"></div>
+                </div>
+                <h2 class="quote-title" data-i18n="quote.title">Why StrokeSense Matters</h2>
+                <p class="quote-text">
+                    “Baybayin is a beautiful, historic script, but without modern,
+                    engaging tools, knowledge of it may fade. StrokeSense solves
+                    this problem by combining AI, gamification, and cultural
+                    education in a web-based platform that makes learning
+                    handwriting fun, interactive, and effective.”
+                </p>
             </div>
         </div>
     </section>
@@ -244,11 +468,11 @@
     <!-- Call-to-Action Section -->
     <section class="cta-section">
         <div class="container">
-            <h2 class="cta-title">Start Your Baybayin Journey Today</h2>
-            <p class="cta-subtitle">Join thousands learning Filipino heritage writing</p>
+            <h2 class="cta-title" data-i18n="cta.title">Start Your Baybayin Journey Today</h2>
+            <p class="cta-subtitle" data-i18n="cta.subtitle">Join thousands learning Filipino heritage writing</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary btn-large">Sign Up Free</a>
-                <a href="#" class="btn btn-outline btn-large">See Pricing</a>
+                <a href="#" class="btn btn-primary btn-large" data-i18n="cta.primary">Sign Up Free</a>
+                <a href="#" class="btn btn-outline btn-large" data-i18n="cta.secondary">See Pricing</a>
             </div>
         </div>
     </section>
@@ -274,10 +498,20 @@
                     <h4>Contact</h4>
                     <p><a href="mailto:contact@strokesense.ph">contact@strokesense.ph</a></p>
                     <div class="social-icons">
-                        <a href="#" aria-label="Facebook" class="social-icon">📘</a>
-                        <a href="#" aria-label="Twitter" class="social-icon">🐦</a>
-                        <a href="#" aria-label="Instagram" class="social-icon">📷</a>
-                        <a href="#" aria-label="GitHub" class="social-icon">💻</a>
+                        <a href="#" aria-label="Facebook" class="social-icon">
+                            <img src="fb.png" alt="Facebook" class="social-img">
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-icon">
+                            <img src="ig.png" alt="Instagram" class="social-img">
+                        </a>
+                        <a href="#" aria-label="X" class="social-icon">
+                            <img src="x.png" alt="X" class="social-img">
+                        </a>
+                        <a href="#" aria-label="GitHub" class="social-icon">
+                            <svg viewBox="0 0 24 24" class="social-svg">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
